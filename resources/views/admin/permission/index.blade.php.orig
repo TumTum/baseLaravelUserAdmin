@@ -35,7 +35,7 @@
                                     <thead>
                                     <tr>
                                         <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border-b border-grey-light text-left">
-                                            @include('admin.includes.sort-link', ['label' => 'Name', 'attribute' => 'name'])
+                                            {{ __('Name') }}
                                         </th>
                                         @canany(['permission edit', 'permission delete'])
                                         <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border-b border-grey-light text-left">
@@ -76,7 +76,7 @@
                                 </table>
                             </div>
                             <div class="py-8">
-                                {{ $permissions->appends(request()->query())->links() }}
+                                {{ $permissions->links() }}
                             </div>
                         </div>
                     </div>
