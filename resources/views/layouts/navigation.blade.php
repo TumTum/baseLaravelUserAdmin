@@ -21,9 +21,9 @@
                     <x-nav-link :href="route('role.index')" :active="request()->routeIs('role.index')">
                         {{ __('Roles') }}
                     </x-nav-link>
-{{--                    <x-nav-link :href="route('user.index')" :active="request()->routeIs('user.index')">--}}
-{{--                        {{ __('Users') }}--}}
-{{--                    </x-nav-link>--}}
+                    <x-nav-link :href="route('user.index')" :active="request()->routeIs('user.index')">
+                        {{ __('Users') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -81,9 +81,9 @@
             <x-responsive-nav-link :href="route('role.index')" :active="request()->routeIs('role.index')">
                 {{ __('Roles') }}
             </x-responsive-nav-link>
-{{--            <x-responsive-nav-link :href="route('user.index')" :active="request()->routeIs('user.index')">--}}
-{{--                {{ __('Users') }}--}}
-{{--            </x-responsive-nav-link>--}}
+            <x-responsive-nav-link :href="route('user.index')" :active="request()->routeIs('user.index')">
+                {{ __('Users') }}
+            </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
